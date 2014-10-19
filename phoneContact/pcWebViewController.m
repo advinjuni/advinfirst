@@ -187,7 +187,6 @@
     currentlocation=[locations lastObject];
     [self reverseGeocdeLocation:currentlocation];
     _locatelabel.text=locate;
-    [self performSegueWithIdentifier:@"showmap" sender:self];
 
 }
 
