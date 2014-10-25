@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Pc Web View Controller - Web-->
+        <!--Pc Web View Controller-->
         <scene sceneID="Scd-av-8Iz">
             <objects>
                 <viewController id="PKJ-ct-Fe3" customClass="pcWebViewController" sceneMemberID="viewController">
@@ -77,7 +77,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Web" id="xYC-Yg-iEV"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="xYC-Yg-iEV"/>
                     <connections>
                         <outlet property="Home" destination="CXB-yB-vBj" id="ttC-RH-BuK"/>
                         <outlet property="SearchFiled" destination="Khc-V7-aCB" id="jqe-Od-PEo"/>
@@ -91,7 +91,7 @@
             </objects>
             <point key="canvasLocation" x="537" y="-61"/>
         </scene>
-        <!--Pc Local View Controller - Local-->
+        <!--Pc Local View Controller-->
         <scene sceneID="2jx-ai-JFJ">
             <objects>
                 <viewController id="3sE-8y-IxG" customClass="pcLocalViewController" sceneMemberID="viewController">
@@ -100,7 +100,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Local" id="jPV-Sx-5lk"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="jPV-Sx-5lk"/>
                     <connections>
                         <segue destination="g0y-Pa-ice" kind="modal" identifier="addContactDetail" id="2jP-Sh-L3a"/>
                     </connections>

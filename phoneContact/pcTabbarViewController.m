@@ -27,11 +27,15 @@
 {
     [super viewDidLoad];
     
+        //   [self.tabBar.items[0] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIColor blackColor], NSForegroundColorAttributeName, [UIFont fontWithName:@"Courier" size:16.0], NSFontAttributeName,nil]];
+   /*
     for (NSUInteger index =0; index < [self.tabBar.items count];index++)
     {
         [[self.tabBar.items objectAtIndex:index] setTitlePositionAdjustment:UIOffsetMake(0, -20)];
+
+
     }
-    
+    */
 }
 
 - (void)didReceiveMemoryWarning

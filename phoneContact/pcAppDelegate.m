@@ -13,8 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
 
-   // _add_detail=YES;
-  //  _row=111;
+
     return YES;
 }
 

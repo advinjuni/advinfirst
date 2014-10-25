@@ -44,7 +44,8 @@
 
     // make nav bar
     navbar = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 20, 320, 40)];
-    UINavigationItem *navtitle = [[UINavigationItem alloc]initWithTitle:@"通讯录"];
+    UINavigationItem *navtitle = [[UINavigationItem alloc]initWithTitle:@"contact"];
+        [navbar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIColor blackColor], NSForegroundColorAttributeName, [UIFont fontWithName:@"Courier" size:16.0], NSFontAttributeName,nil]];
     [navbar pushNavigationItem:navtitle animated:YES];
     
     UIBarButtonItem *leftitem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(refresh)];
