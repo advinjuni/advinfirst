@@ -101,7 +101,7 @@
     [self.view endEditing:YES];
     [searchbar removeFromSuperview];
 }
-/*
+
 -(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 
 {
@@ -109,44 +109,44 @@
     {
         _tableView.frame= CGRectMake(0, 60, 568, 220);
         navbar.frame = CGRectMake(0, 20, 568, 40);
-      //  searchbar.frame=CGRectMake(0, 0, 568, 20);
+        searchbar.frame=CGRectMake(0, 20, 568, 40);
     }
     else
     {
         _tableView.frame= CGRectMake(0, 60, 320, 468);
         navbar.frame = CGRectMake(0, 20, 320, 40);
-      //  searchbar.frame=CGRectMake(0, 0, 320, 20);
+       searchbar.frame=CGRectMake(0, 20, 320, 40);
         
     }
     
 }
-*/
+
 -(void)viewDidAppear:(BOOL)animated
 {
-   /*
+   
     if (self.interfaceOrientation ==UIInterfaceOrientationLandscapeLeft)
     {
-        navbar.frame = CGRectMake(0, 20, 568, 220);
-        _tableView.frame= CGRectMake(0, 60, 568, 40);
-        searchbar.frame=CGRectMake(0, 0, 568, 20);
+        navbar.frame = CGRectMake(0, 20, 568, 40);
+        _tableView.frame= CGRectMake(0, 60, 568, 220);
+        searchbar.frame=CGRectMake(0, 20, 568, 40);
 
     }
     else if (self.interfaceOrientation ==UIInterfaceOrientationLandscapeRight)
     {
 
-        navbar.frame = CGRectMake(0, 20, 568, 220);
-        _tableView.frame= CGRectMake(0, 60, 568, 40);
-        searchbar.frame=CGRectMake(0, 0, 568, 20);
+        navbar.frame = CGRectMake(0, 20, 568, 40);
+        _tableView.frame= CGRectMake(0, 60, 568, 220);
+        searchbar.frame=CGRectMake(0, 20, 568, 20);
 
 
     }
     else
     {
-        navbar.frame = CGRectMake(0, 20, 320, 468);
-        _tableView.frame= CGRectMake(0, 60, 320, 40);
-        searchbar.frame=CGRectMake(0, 0, 320, 20);
+        navbar.frame = CGRectMake(0, 20, 320, 40);
+        _tableView.frame= CGRectMake(0, 60, 320, 368);
+        searchbar.frame=CGRectMake(0, 20, 320, 40);
     }
-    */
+    
 }
 
 
