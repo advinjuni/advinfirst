@@ -9,6 +9,7 @@
 #import "pcLocalViewDetailController.h"
 #import "pcLocalViewController.h"
 #import "pcAppDelegate.h"
+#import "SharedInstanceClass.h"
 
 @interface pcLocalViewDetailController ()
 
@@ -32,8 +33,17 @@
     // make nav bar
     uinav = [[UINavigationBar alloc]initWithFrame:CGRectMake(0, 20, 320, 40)];
     uinavitem = [[UINavigationItem alloc]init];
-    UIBarButtonItem *leftitem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(Done)];
-    UIBarButtonItem *rightitem =[[ UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave target:self action:@selector(Save)];
+    UIButton *back=[[UIButton alloc] init];
+   back= [self changebuttonstyle:back settitle:@"cancel"];
+    [back addTarget:self action:@selector(Done) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *leftitem =[[ UIBarButtonItem alloc] initWithCustomView:back];
+    
+    UIButton *save=[[UIButton alloc] init];
+   save= [self changebuttonstyle:save settitle:@"save"];
+    [save addTarget:self action:@selector(Save) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *rightitem =[[ UIBarButtonItem alloc] initWithCustomView:save];
+
+    [uinav setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys: [UIColor blackColor], NSForegroundColorAttributeName, [UIFont fontWithName:@"Courier" size:16.0], NSFontAttributeName,nil]];
     [uinavitem setTitle:@"Add"];
     uinavitem.leftBarButtonItem =leftitem;
     uinavitem.rightBarButtonItem =rightitem;
@@ -49,6 +59,16 @@
     self.numbertext.keyboardType=UIKeyboardTypeNumberPad;
 
     // Uncomment the following line to preserve selection between presentations.
+}
+-(UIButton*) changebuttonstyle:(UIButton *) button settitle:(NSString *) title
+{
+    button=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+    button.bounds=CGRectMake(0, 0, 40, 30);
+    button.titleLabel.font=[UIFont fontWithName:@"Courier" size:11];
+    [button setTitle:title forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    button.backgroundColor=[UIColor clearColor];
+    return button;
 }
 -(void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 
@@ -85,12 +105,14 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    pcAppDelegate *appdelegate =[[UIApplication sharedApplication] delegate];
-    [self customnavigationbar:appdelegate.add_detail];
-    if (appdelegate.add_detail) {
+   // pcAppDelegate *appdelegate =[[UIApplication sharedApplication] delegate];
+   /// [self customnavigationbar:appdelegate.add_detail];
+    BOOL temp=[SharedInstanceClass sharedinstance].add_detail;
+    [self customnavigationbar:temp];
+    if (temp) {
         NSString *plistpath=[self copyfileifneed];
         NSMutableArray *array = [[NSMutableArray alloc] initWithContentsOfFile:plistpath];
-        NSDictionary *dict=[array objectAtIndex:appdelegate.row];
+        NSDictionary *dict=[array objectAtIndex:[SharedInstanceClass sharedinstance].row];
         self.NameText.text=[ dict objectForKey:@"Name"];
         self.AgeText.text=[dict objectForKey:@"age"];
         self.numbertext.text=[dict objectForKey:@"phonenumber"];
@@ -118,8 +140,8 @@
 -(void) Save
 {
     
-    pcAppDelegate *appdelegate =[[UIApplication sharedApplication] delegate];
-    if (appdelegate.add_detail) {
+   // pcAppDelegate *appdelegate =[[UIApplication sharedApplication] delegate];
+    if ([SharedInstanceClass sharedinstance].add_detail) {
     }
     else
     {
@@ -140,19 +162,19 @@
 -(void)textfieldchange
 {
     NSLog(@"observer open");
-    pcAppDelegate *appdelegate =[[UIApplication sharedApplication] delegate];
-    if (!appdelegate.add_detail) {
+   // pcAppDelegate *appdelegate =[[UIApplication sharedApplication] delegate];
+    if (![SharedInstanceClass sharedinstance].add_detail) {
         
     } else {
-        pcAppDelegate *appdelegate =[[UIApplication sharedApplication] delegate];
+     //   pcAppDelegate *appdelegate =[[UIApplication sharedApplication] delegate];
         NSString *plistpath=[self copyfileifneed];
         NSMutableArray *array = [[NSMutableArray alloc] initWithContentsOfFile:plistpath];
-        NSDictionary *dict = [array objectAtIndex:appdelegate.row];
+        NSDictionary *dict = [array objectAtIndex:[SharedInstanceClass sharedinstance].row];
         [ dict setValue:self.NameText.text forKey:@"Name"];
         [ dict setValue:self.AgeText.text forKey:@"age"];
         [ dict setValue:self.numbertext.text forKey:@"phonenumber"];
         
-        [array replaceObjectAtIndex:appdelegate.row withObject:dict];
+        [array replaceObjectAtIndex:[SharedInstanceClass sharedinstance].row withObject:dict];
         NSLog(@"%@",self.NameText.text);
         [array writeToFile:plistpath atomically:YES];
     }

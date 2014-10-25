@@ -7,6 +7,7 @@
 #import "pcLocalViewController.h"
 #import "pcLocalViewDetailController.h"
 #import "pcAppDelegate.h"
+#import "SharedInstanceClass.h"
 @interface pcLocalViewController ()
 
 @end
@@ -76,8 +77,9 @@
 
 -(void) add
 {
-    pcAppDelegate *appdelegate= [[UIApplication sharedApplication] delegate];
-    appdelegate.add_detail =NO;
+   // pcAppDelegate *appdelegate= [[UIApplication sharedApplication] delegate];
+    //appdelegate.add_detail =NO;
+    [SharedInstanceClass sharedinstance].add_detail=NO;
     [self performSegueWithIdentifier:@"addContactDetail" sender:self];
 }
 
@@ -219,8 +221,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [tableviewdata count];
-    NSInteger he= [ tableviewdata count];
-    NSLog(@"%d",he);
+//    NSInteger he= [ tableviewdata count];
+//    NSLog(@"%d",he);
     
 }
 
@@ -267,9 +269,11 @@
 {
     
     [self performSegueWithIdentifier:@"addContactDetail" sender:self];
-    pcAppDelegate *appdelegate= [[UIApplication sharedApplication] delegate];
-    appdelegate.add_detail =YES;
-    appdelegate.row=indexPath.row;
+  //  pcAppDelegate *appdelegate= [[UIApplication sharedApplication] delegate];
+    [SharedInstanceClass sharedinstance].add_detail=YES;
+    [SharedInstanceClass sharedinstance].row=indexPath.row;
+    //appdelegate.add_detail =YES;
+    //appdelegate.row=indexPath.row;
 }
 
 

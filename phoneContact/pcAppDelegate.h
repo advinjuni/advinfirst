@@ -11,9 +11,9 @@
 
 @interface pcAppDelegate : UIResponder <UIApplicationDelegate>
 
-@property BOOL add_detail;
+//@property BOOL add_detail;
 
-@property NSUInteger row;
+//@property NSUInteger row;
 
 @property (strong, nonatomic) UIWindow *window;
 

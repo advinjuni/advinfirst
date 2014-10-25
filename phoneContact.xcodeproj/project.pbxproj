@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C9005B9C19DC331300755EBE /* phoneContact.plist in Resources */ = {isa = PBXBuildFile; fileRef = C9005B9B19DC331300755EBE /* phoneContact.plist */; };
 		C910FCDE19F1F41D00FE7538 /* pcLocalViewDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = C910FCDD19F1F41D00FE7538 /* pcLocalViewDetailController.m */; };
+		C9178E0E19FB826500819FC4 /* SharedInstanceClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C9178E0D19FB826500819FC4 /* SharedInstanceClass.m */; };
 		C97D8F9219DAC4F0002888F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97D8F9119DAC4F0002888F4 /* Foundation.framework */; };
 		C97D8F9419DAC4F0002888F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97D8F9319DAC4F0002888F4 /* CoreGraphics.framework */; };
 		C97D8F9619DAC4F0002888F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C97D8F9519DAC4F0002888F4 /* UIKit.framework */; };
@@ -48,6 +49,8 @@
 		C9005B9B19DC331300755EBE /* phoneContact.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = phoneContact.plist; sourceTree = "<group>"; };
 		C910FCDC19F1F41D00FE7538 /* pcLocalViewDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcLocalViewDetailController.h; sourceTree = "<group>"; };
 		C910FCDD19F1F41D00FE7538 /* pcLocalViewDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pcLocalViewDetailController.m; sourceTree = "<group>"; };
+		C9178E0C19FB826500819FC4 /* SharedInstanceClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedInstanceClass.h; sourceTree = "<group>"; };
+		C9178E0D19FB826500819FC4 /* SharedInstanceClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedInstanceClass.m; sourceTree = "<group>"; };
 		C97D8F8E19DAC4F0002888F4 /* phoneContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phoneContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C97D8F9119DAC4F0002888F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C97D8F9319DAC4F0002888F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -152,6 +155,8 @@
 				C9DAD96819E520F400081953 /* custom.bundle */,
 				C97D8FA019DAC4F0002888F4 /* pcAppDelegate.h */,
 				C97D8FA119DAC4F0002888F4 /* pcAppDelegate.m */,
+				C9178E0C19FB826500819FC4 /* SharedInstanceClass.h */,
+				C9178E0D19FB826500819FC4 /* SharedInstanceClass.m */,
 				C910FCDC19F1F41D00FE7538 /* pcLocalViewDetailController.h */,
 				C910FCDD19F1F41D00FE7538 /* pcLocalViewDetailController.m */,
 				C9F36D8619EFD5FB0024636A /* pcLocalViewController.h */,
@@ -299,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C97D8F9E19DAC4F0002888F4 /* main.m in Sources */,
+				C9178E0E19FB826500819FC4 /* SharedInstanceClass.m in Sources */,
 				C9DAD96F19E5276D00081953 /* pcWebViewController.m in Sources */,
 				C9DAD97219E5776200081953 /* Reachability.m in Sources */,
 				C9F36D8819EFD5FB0024636A /* pcLocalViewController.m in Sources */,
