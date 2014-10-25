@@ -239,7 +239,7 @@
     NSUInteger Row= [indexPath row];
     NSDictionary *rowDict= [tableviewdata objectAtIndex:Row];
     cell.textLabel.text=[rowDict objectForKey:@"Name"];
-    cell.accessoryType =UITableViewCellAccessoryDisclosureIndicator;
+    cell.accessoryType =UITableViewCellAccessoryNone;
   
     return cell;
   

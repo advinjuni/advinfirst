@@ -47,8 +47,8 @@
 
 /* Begin PBXFileReference section */
 		C9005B9B19DC331300755EBE /* phoneContact.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = phoneContact.plist; sourceTree = "<group>"; };
-		C910FCDC19F1F41D00FE7538 /* pcLocalViewDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcLocalViewDetailController.h; sourceTree = "<group>"; };
-		C910FCDD19F1F41D00FE7538 /* pcLocalViewDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pcLocalViewDetailController.m; sourceTree = "<group>"; };
+		C910FCDC19F1F41D00FE7538 /* pcLocalViewDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pcLocalViewDetailController.h; path = phoneContact/pcLocalViewDetailController.h; sourceTree = "<group>"; };
+		C910FCDD19F1F41D00FE7538 /* pcLocalViewDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pcLocalViewDetailController.m; path = phoneContact/pcLocalViewDetailController.m; sourceTree = "<group>"; };
 		C9178E0C19FB826500819FC4 /* SharedInstanceClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SharedInstanceClass.h; sourceTree = "<group>"; };
 		C9178E0D19FB826500819FC4 /* SharedInstanceClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SharedInstanceClass.m; sourceTree = "<group>"; };
 		C97D8F8E19DAC4F0002888F4 /* phoneContact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = phoneContact.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,18 +71,18 @@
 		C9DAD96819E520F400081953 /* custom.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = custom.bundle; sourceTree = "<group>"; };
 		C9DAD96A19E525F600081953 /* UIImage+uiimagepath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+uiimagepath.h"; sourceTree = "<group>"; };
 		C9DAD96B19E525F600081953 /* UIImage+uiimagepath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+uiimagepath.m"; sourceTree = "<group>"; };
-		C9DAD96D19E5276D00081953 /* pcWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcWebViewController.h; sourceTree = "<group>"; };
-		C9DAD96E19E5276D00081953 /* pcWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pcWebViewController.m; sourceTree = "<group>"; };
+		C9DAD96D19E5276D00081953 /* pcWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pcWebViewController.h; path = phoneContact/pcWebViewController.h; sourceTree = "<group>"; };
+		C9DAD96E19E5276D00081953 /* pcWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pcWebViewController.m; path = phoneContact/pcWebViewController.m; sourceTree = "<group>"; };
 		C9DAD97019E5776200081953 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		C9DAD97119E5776200081953 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		C9DAD97319E5778200081953 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		C9E1D74A19E02927003B1225 /* pcTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcTabbarViewController.h; sourceTree = "<group>"; };
-		C9E1D74B19E02927003B1225 /* pcTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pcTabbarViewController.m; sourceTree = "<group>"; };
+		C9E1D74A19E02927003B1225 /* pcTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pcTabbarViewController.h; path = phoneContact/pcTabbarViewController.h; sourceTree = "<group>"; };
+		C9E1D74B19E02927003B1225 /* pcTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pcTabbarViewController.m; path = phoneContact/pcTabbarViewController.m; sourceTree = "<group>"; };
 		C9EA794A19F0DA4300B930BE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C9EA794C19F0F07E00B930BE /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		C9EA795119F126CE00B930BE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		C9F36D8619EFD5FB0024636A /* pcLocalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pcLocalViewController.h; sourceTree = "<group>"; };
-		C9F36D8719EFD5FB0024636A /* pcLocalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pcLocalViewController.m; sourceTree = "<group>"; };
+		C9F36D8619EFD5FB0024636A /* pcLocalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pcLocalViewController.h; path = phoneContact/pcLocalViewController.h; sourceTree = "<group>"; };
+		C9F36D8719EFD5FB0024636A /* pcLocalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pcLocalViewController.m; path = phoneContact/pcLocalViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +116,7 @@
 		C97D8F8519DAC4F0002888F4 = {
 			isa = PBXGroup;
 			children = (
+				C9EB1CB919FBB40000D8DCCB /* ViewControllers */,
 				C97D8F9719DAC4F0002888F4 /* phoneContact */,
 				C97D8FB019DAC4F0002888F4 /* phoneContactTests */,
 				C97D8F9019DAC4F0002888F4 /* Frameworks */,
@@ -155,19 +156,7 @@
 				C9DAD96819E520F400081953 /* custom.bundle */,
 				C97D8FA019DAC4F0002888F4 /* pcAppDelegate.h */,
 				C97D8FA119DAC4F0002888F4 /* pcAppDelegate.m */,
-				C9178E0C19FB826500819FC4 /* SharedInstanceClass.h */,
-				C9178E0D19FB826500819FC4 /* SharedInstanceClass.m */,
-				C910FCDC19F1F41D00FE7538 /* pcLocalViewDetailController.h */,
-				C910FCDD19F1F41D00FE7538 /* pcLocalViewDetailController.m */,
-				C9F36D8619EFD5FB0024636A /* pcLocalViewController.h */,
-				C9F36D8719EFD5FB0024636A /* pcLocalViewController.m */,
 				C97D8FC019DAC589002888F4 /* phoneContact.storyboard */,
-				C9DAD96D19E5276D00081953 /* pcWebViewController.h */,
-				C9DAD96E19E5276D00081953 /* pcWebViewController.m */,
-				C9DAD96A19E525F600081953 /* UIImage+uiimagepath.h */,
-				C9DAD96B19E525F600081953 /* UIImage+uiimagepath.m */,
-				C9E1D74A19E02927003B1225 /* pcTabbarViewController.h */,
-				C9E1D74B19E02927003B1225 /* pcTabbarViewController.m */,
 				C97D8FA319DAC4F0002888F4 /* Images.xcassets */,
 				C97D8F9819DAC4F0002888F4 /* Supporting Files */,
 			);
@@ -177,6 +166,10 @@
 		C97D8F9819DAC4F0002888F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C9178E0C19FB826500819FC4 /* SharedInstanceClass.h */,
+				C9178E0D19FB826500819FC4 /* SharedInstanceClass.m */,
+				C9DAD96A19E525F600081953 /* UIImage+uiimagepath.h */,
+				C9DAD96B19E525F600081953 /* UIImage+uiimagepath.m */,
 				C97D8F9919DAC4F0002888F4 /* phoneContact-Info.plist */,
 				C97D8F9A19DAC4F0002888F4 /* InfoPlist.strings */,
 				C9005B9B19DC331300755EBE /* phoneContact.plist */,
@@ -202,6 +195,21 @@
 				C97D8FB319DAC4F0002888F4 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9EB1CB919FBB40000D8DCCB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C910FCDC19F1F41D00FE7538 /* pcLocalViewDetailController.h */,
+				C910FCDD19F1F41D00FE7538 /* pcLocalViewDetailController.m */,
+				C9F36D8619EFD5FB0024636A /* pcLocalViewController.h */,
+				C9F36D8719EFD5FB0024636A /* pcLocalViewController.m */,
+				C9DAD96D19E5276D00081953 /* pcWebViewController.h */,
+				C9DAD96E19E5276D00081953 /* pcWebViewController.m */,
+				C9E1D74A19E02927003B1225 /* pcTabbarViewController.h */,
+				C9E1D74B19E02927003B1225 /* pcTabbarViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
